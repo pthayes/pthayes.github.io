@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+a:hover {
+  color: #9d9d9d;
+}
+
 .title {
   text-align: center;
   font-size: 1.5rem;
@@ -41,7 +45,7 @@ a {
 
 .menu_selected {
   font-style: italic;
-  color: #0d6efd;
+  color: #7d7d7d;
 }
 
 header {
