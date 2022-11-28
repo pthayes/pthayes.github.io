@@ -2,7 +2,7 @@ body {
   font-family: Times New Roman, Georgia, serif;
   font-weight: 400;
   font-size: 1rem;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   /* padding-top: 100px; */
 }
 
@@ -15,14 +15,20 @@ a:hover {
   color: #9d9d9d;
 }
 
+p.bold {
+  font-weight: bold;
+}
+
 .title {
   text-align: center;
   font-size: 1.5rem;
+  letter-spacing: 4px;
 }
 
 .menu {
   text-align: center;
   font-size: 0.8rem;
+  letter-spacing: 4px;
 }
 
 .menu ul {
@@ -55,7 +61,7 @@ header {
   background-color: #fff;
   text-align: center;
   position: fixed;
-  top: 24px;
+  top: 0;
   left: 0;
   z-index: 9;
   transition: background-color .2s;
@@ -64,11 +70,11 @@ header {
 main {
   padding-bottom: 3vh;
   font-size: 14px;
-  padding-top: calc(27vh + 0rem);
+  padding-top: calc(20vh + 0rem);
 }
 
 main section {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -106,6 +112,22 @@ main section {
   animation-delay: 7.5s;
 }
 
+.resume_section {
+  margin-bottom: 3rem;
+}
+
+.resume_item {
+  margin-bottom: 0.7em;
+}
+
+.resume_item p {
+  margin-bottom: 0.05em;
+}
+
+.resume h2 {
+  margin-bottom: 0.5em;
+}
+
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
@@ -132,10 +154,6 @@ main section {
     line-height: 1.9rem;
   }
 
-  header {
-    top: 30px;
-  }
-
   .menu ul li:not(:last-child):after {
     margin: 0 0 0 7px;
   }
@@ -154,7 +172,7 @@ main section {
 
   main {
     font-size: 16px;
-    padding-top: calc(27vh + 1rem);
+    padding-top: calc(20vh + 1rem);
   }
 
 }
