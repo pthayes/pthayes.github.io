@@ -1,0 +1,156 @@
+body {
+  font-family: Times New Roman, Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  /* padding-top: 100px; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.menu {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li:not(:last-child):after {
+  content: "/";
+  display: inline-block;
+  margin: 0 0 0 3px;
+}
+
+.menu_selected {
+  font-style: italic;
+  color: #0d6efd;
+}
+
+header {
+  width: 100%;
+  padding-top: 7vh;
+  padding-bottom: 3vh;
+  background-color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 9;
+  transition: background-color .2s;
+}
+
+main {
+  padding-bottom: 3vh;
+  font-size: 14px;
+  padding-top: calc(27vh + 0rem);
+}
+
+main section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.marquee_wrapper {
+  color: white;
+  background-color: black;
+  height: 1.5rem;
+  font-size: 1rem;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 7.5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media screen and (min-width:480px) {
+
+  .menu {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+}
+
+@media screen and (min-width:800px) {
+
+  .marquee_wrapper {
+    height: 2.2rem;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  header {
+    top: 30px;
+  }
+
+  .menu ul li:not(:last-child):after {
+    margin: 0 0 0 7px;
+  }
+
+  .menu {
+    font-size: 1.275rem;
+  }
+
+  body {
+    font-size: 1.375rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  main {
+    font-size: 16px;
+    padding-top: calc(27vh + 1rem);
+  }
+
+}
