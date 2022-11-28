@@ -78,7 +78,7 @@ main section {
   white-space: nowrap;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
   line-height: 1.5rem;
 }
@@ -88,7 +88,7 @@ main section {
   white-space: nowrap;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
 }
 
