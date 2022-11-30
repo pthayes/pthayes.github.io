@@ -68,9 +68,10 @@ header {
 }
 
 main {
-  padding-bottom: 3vh;
+  padding-bottom: 5vh;
   font-size: 14px;
   padding-top: calc(20vh + 0rem);
+  margin-bottom: 15vh;
 }
 
 main section {
@@ -91,6 +92,7 @@ main section {
   bottom: 0;
   width: 100%;
   line-height: 1.5rem;
+  z-index: 10;
 }
 
 .marquee {
@@ -127,6 +129,31 @@ main section {
 .resume h2 {
   margin-bottom: 0.5em;
 }
+
+.carousel-caption {
+  bottom: -120px;
+  color: black;
+}
+
+.carousel-inner {
+  /* padding-bottom: 150px; */
+  overflow: visible;
+}
+
+.carousel-item {
+  transition: transform .01s ease-in-out !important;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+
+.carousel-item {
+    -webkit-backface-visibility: unset!important;
+    backface-visibility: unset!important;
+}
+
 
 @keyframes marquee {
   0% {
