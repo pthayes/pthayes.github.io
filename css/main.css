@@ -75,9 +75,16 @@ main {
 }
 
 main section {
-  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section-md {
+  max-width: 800px;
+}
+
+.section-lg {
+  max-width: 1200px;
 }
 
 .marquee_wrapper {
