@@ -162,6 +162,10 @@ main section {
   height: 500px;
 }
 
+#portfolio-gallery a:hover img {
+  opacity: 0.8;
+}
+
 
 @keyframes marquee {
   0% {
