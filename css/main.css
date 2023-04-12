@@ -166,10 +166,6 @@ main section {
   opacity: 0.8;
 }
 
-main section {
-  max-width: 1200px;
-}
-
 
 @keyframes marquee {
   0% {
