@@ -173,6 +173,9 @@ main section {
   opacity: 0.8;
 }
 
+.modal-img a {
+  cursor: pointer;
+}
 
 @keyframes marquee {
   0% {
