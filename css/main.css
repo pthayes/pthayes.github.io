@@ -185,6 +185,10 @@ main section {
   cursor: pointer;
 }
 
+.modal-body {
+  padding: 0;
+}
+
 @keyframes marquee {
   0% {
     transform: translate(0, 0);

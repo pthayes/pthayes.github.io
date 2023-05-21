@@ -26,6 +26,7 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   // Extract info from data-bs-* attributes
   var img_src = button.querySelector('img').getAttribute('src')
   var img_txt = button.querySelector('p').innerText
+
   // If necessary, you could initiate an AJAX request here
   // and then do the updating in a callback.
   //
@@ -33,6 +34,18 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   var modalTitle = exampleModal.querySelector('.modal-title')
   var modalBodyInput = exampleModal.querySelector('.modal-body img')
 
+
   modalTitle.textContent = img_txt
   modalBodyInput.src = img_src
+
+
+  if (button.querySelector('img').hasAttribute("data-size-modal")) {
+    //data attribute exists
+
+    var size_modal = button.querySelector('img').getAttribute('data-size-modal')
+    var modalDialog = exampleModal.querySelector('.modal-dialog')
+    modalDialog.style.maxWidth = size_modal
+    modalDialog.style.marginRight = "auto"
+    modalDialog.style.marginLeft = "auto"
+ }
 })
