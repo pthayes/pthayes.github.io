@@ -8,7 +8,7 @@ document.getElementById('my-modal').innerHTML = `<div class="modal fade" id="exa
       </div>
       <div class="modal-body">
 
-        <img id="imageresource" src="../img/punk-pavilion-model-3.jpg" style="width: 100%;">
+        <img id="imageresource" src="" style="width: 100%;">
       </div>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
